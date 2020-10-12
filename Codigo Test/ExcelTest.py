@@ -24,20 +24,26 @@ while cont<=5:
    Incorrectacell_2= readFile["Res_II_2"][cont]
 
 
-   listaInscisos=["a)","b)","c)"]
+   listaInscisos=["a","b","c"]
    contIncisos=0
+   print(" ","\n",preguntacell)
 
-   print("","\n",preguntacell)
+   #Imprime todos los incisos de la pregunta
    while contIncisos<len(listaInscisos):
       for inciso in listaInscisos:
          if inciso==resCorrectacell:
-            print(inciso,Correctacell,sep="")
+            print(inciso,Correctacell,sep=" ")
          elif inciso==resIncorrectacell_1:
-            print(inciso,Incorrectacell_1,sep="")
+            print(inciso,Incorrectacell_1,sep=" ")
          elif inciso==resIncorrectacell_2:
-            print(inciso,Incorrectacell_2,sep="")
+            print(inciso,Incorrectacell_2,sep=" ")
       contIncisos=3
-   
-
    cont+=1
    contIncisos+=1
+
+
+   #responder preguntas
+
+   resUrs=input("Ingrese el inciso conrrecto: ")
+   resUrs= resUrs.lower()
+   print(f"Su respuets {resUrs} el inciso {resCorrectacell}")
