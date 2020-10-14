@@ -3,6 +3,8 @@ import pandas as pd #recuerda instalar modulo pandas
 
 
 #cambien la ruta dependiendo de donde guarden el excel
+
+#filePath=
 filePath="/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/Archivo Exel/PInt.xlsx"
 
 readFile=pd.read_excel(filePath)

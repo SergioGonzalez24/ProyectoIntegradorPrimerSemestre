@@ -1,68 +1,64 @@
-''' 
-Descripcion:
-
-Desarrollado por:
-Sergio Manuel Gonzalez Vargas - A0174544 
-German Guzaman Lopez - A0175
-Isabel Vieyra Enríquez
-'''
-
-#modulos 
-
-import tkinter as tk
+from os import system, name
 import pandas as pd
-import time 
-from os import system,name
+import time
+from _ast import While
 
-#ejercicios de secciones
+def clear(): #Funcion para borrar contenido de terminal
+    # para windows 
+    if name == 'nt': 
+        _ = system('cls') 
+    # para mac y linux
+    else: 
+        _ = system('clear') 
 
-def lecturas ():
-    pass
-def ciencia():
-    pass
 def matematicas():
     pass
 
-#main
+def ciencias():
+    pass
 
-def salir_de_ventana():
-    ventana.destroy()
+def lectura():
+    pass
 
-#MENU PRINCIPAL
+def main():
+    print("Bienvenido a la apliccación Sharp Learning")
+    print("\nAqui podras practicar tus habilidades de: \n\nMatematicas, Ciencias y Lectura\n")
 
-#Menu grafico de la plicación
-ventana=tk.Tk()
-ventana.title("Applicacion para reforzar tus estudios")
-ventana.geometry("500x500")
-ventana.config(bg="#0174DF")
-ventana.resizable(0,0)
+    eleccionActividad=int(input("Seleccione el numero de las actividades a realizar: \n\n1-.Matematicas \n\n2-.Ciencias \n\n3-.Lectura\n"))
 
-#Info dentro de la ventana 
-textoMenu='''
-Programa que ayudara a reforzar tus conocimientos de ciencias,
-matematicas y lectura.
-Desarrollado por: 
-Sergio Gonzalez - A01745446
-German Guzaman - A0175
-Isabel Vieyra - A0174
+    if eleccionActividad==(1):
+        clear()
+        matematicas()
+        regresar= int(input("Para regresar oprima 1 para salir 2"))
+        if regresar==1:
+            return True
+        elif  regresar==2:
+            return False
+        clear()
+        
+    elif eleccionActividad==(2):
+        clear()
+        ciencias()
+        regresar= int(input("Para regresar oprima 1 para salir 2"))
+        if regresar==1:
+            return True
+        elif  regresar==2:
+            return False
+        clear()
 
-'''
+    elif eleccionActividad==(3):
+        clear()
+        lectura()
+        regresar= int(input("Para regresar oprima 1 para salir 2"))
+        if regresar==1:
+            return True
+        elif  regresar==2:
+            return False
+        clear()
 
-textoPrincipal=tk.Label(ventana,text=textoMenu,bg="#0174DF",fg="white",font="none 14 bold")
-textoPrincipal.pack(side=tk.TOP)
+    else:
+        print("Valor invalido")
 
-#Boton Start
-
-botonS=tk.Button(ventana,text="Start",fg="black",font="none 14 bold",padx=40,pady=50,command=lambda:salir_de_ventana())
-botonS.pack()
-
-
-
-ventana.mainloop()
-
-
-
-
-
-
-
+a=1
+while a==1:
+    main()
