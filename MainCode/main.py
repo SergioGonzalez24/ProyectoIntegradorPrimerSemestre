@@ -27,8 +27,6 @@ def matematicas():
 
 def salir_de_ventana():
     ventana.destroy()
-def abrir_ventana():
-    ventana2.open()
 
 #MENU PRINCIPAL
 
