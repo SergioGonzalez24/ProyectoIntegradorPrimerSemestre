@@ -1,5 +1,5 @@
 from os import system, name
-def clear(): 
+def clear(): #Funcion para borrar contenido de terminal
     # para windows 
     if name == 'nt': 
         _ = system('cls') 
@@ -7,10 +7,16 @@ def clear():
     else: 
         _ = system('clear') 
 
-def lectura1 ():
+def lectura1 (): #Lectura y ejercicos 1 
     '''Esta funcion llama la primer lectura y sus preguntas'''
-    #Cambiar ruta dependiendo el usuario
-    lectura=open("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/Lecturas/El_Congreso_de_los_ratones.txt","r")
+    #Rutas; colocar ruta nueva en caso de ser necesario y maracar como comentario las que no estan en uso
+
+    #german=("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/Lecturas/El_Congreso_de_los_ratones.txt")
+    sergio=("/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/Lecturas/El_Congreso_de_los_ratones.txt")
+
+    print("")
+    lectura=open(sergio,"r") #Cambiar ruta dependiendo el usuario
+
     print (lectura.read())
     lectura.close()
 
@@ -25,9 +31,15 @@ def lectura1 ():
             print ('Entrada no valida')
 
     contador=0
-    
-    #Cambiar ruta dependiendo el usuario
-    preguntas=open("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/Lecturas/Preguntas1.txt","r")
+
+    #Rutas; colocar ruta nueva en caso de ser necesario y maracar como comentario las que no estan en uso
+
+    #german=("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/Lecturas/Preguntas1.txt")
+    sergio=("/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/Lecturas/Preguntas1.txt")
+
+    print("")
+    preguntas=open(sergio,"r") #Cambiar ruta dependiendo el usuario
+
     print(preguntas.read())
     preguntas.close()
 
@@ -51,7 +63,7 @@ def lectura1 ():
 
     valid2=False
     while valid2 != True:
-        prompt2=input('Introduzca "ok" cuando haya terminado para pasar a la siguiente lectura\n')
+        prompt2=input('Introduzca "ok" para continuar\n')
         prompt2.lower()
         if prompt2=="ok":
             valid2=True
@@ -60,10 +72,15 @@ def lectura1 ():
             print ('Entrada no valida')
     
 
-def lectura2 ():
+def lectura2 (): #Lectura y ejercicos 1 
     '''Esta funcion llama la segunda lectura y sus preguntas correspondientes'''
-    #Cambiar ruta dependiendo el usuario
-    lectura=open("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/Lecturas/El_raton_campesino_y_el_rico_cortesano.txt","r")
+
+    #Rutas; colocar ruta nueva en caso de ser necesario y maracar como comentario las que no estan en uso
+
+    #german=("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/Lecturas/El_raton_campesino_y_el_rico_cortesano.txt")
+    sergio=("/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/Lecturas/El_raton_campesino_y_el_rico_cortesano.txt")
+
+    lectura=open(sergio,"r") #Cambiar ruta dependiendo el usuario
     print (lectura.read())
     lectura.close()
 
@@ -79,8 +96,12 @@ def lectura2 ():
 
     contador=0
 
-    #Cambiar ruta dependiendo el usuario
-    preguntas=open("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/Lecturas/Preguntas2.txt","r")
+    #Rutas; colocar ruta nueva en caso de ser necesario y maracar como comentario las que no estan en uso
+
+    #german=("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/Lecturas/Preguntas2.txt")
+    sergio=("/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/Lecturas/Preguntas2.txt")
+
+    preguntas=open(sergio,"r") #Cambiar ruta dependiendo el usuario
     print(preguntas.read())
     preguntas.close()
 
@@ -109,7 +130,8 @@ def lectura2 ():
     else:
         clear()
 
-#Cambiar ruta dependiendo el usuario
+
+#ejecutar
 lectura1()
 
 lectura2()
