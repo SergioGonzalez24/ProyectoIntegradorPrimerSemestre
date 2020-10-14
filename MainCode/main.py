@@ -25,6 +25,13 @@ def matematicas():
 
 #main
 
+def salir_de_ventana():
+    ventana.destroy()
+def abrir_ventana():
+    ventana2.open()
+
+#MENU PRINCIPAL
+
 #Menu grafico de la plicación
 ventana=tk.Tk()
 ventana.title("Applicacion para reforzar tus estudios")
@@ -37,9 +44,9 @@ textoMenu='''
 Programa que ayudara a reforzar tus conocimientos de ciencias,
 matematicas y lectura.
 Desarrollado por: 
-Sergio Gonzalez
-German Guzaman 
-Isabel Vieyra
+Sergio Gonzalez - A01745446
+German Guzaman - A0175
+Isabel Vieyra - A0174
 
 '''
 
@@ -47,11 +54,10 @@ textoPrincipal=tk.Label(ventana,text=textoMenu,bg="#0174DF",fg="white",font="non
 textoPrincipal.pack(side=tk.TOP)
 
 #Boton Start
-def salir_de_ventana():
-    ventana.destroy()
 
-botonS=tk.Button(ventana,text="Start",padx=40,pady=50,command=lambda:salir_de_ventana())
+botonS=tk.Button(ventana,text="Start",fg="black",font="none 14 bold",padx=40,pady=50,command=lambda:salir_de_ventana())
 botonS.pack()
+
 
 
 ventana.mainloop()
