@@ -3,6 +3,12 @@ import pandas as pd
 import time
 from _ast import While
 
+#Importar modulos de aplicaciones
+from Lecturas_Function import Lecturas
+from Matematicas_Function import Matematicas
+from Ciencias_Function import Ciencias
+
+
 def clear(): #Funcion para borrar contenido de terminal
     # para windows 
     if name == 'nt': 
@@ -20,45 +26,82 @@ def ciencias():
 def lectura():
     pass
 
-def main():
+
+def main(): #Funcion Principal 
     print("Bienvenido a la apliccación Sharp Learning")
     print("\nAqui podras practicar tus habilidades de: \n\nMatematicas, Ciencias y Lectura\n")
 
     eleccionActividad=int(input("Seleccione el numero de las actividades a realizar: \n\n1-.Matematicas \n\n2-.Ciencias \n\n3-.Lectura\n"))
+    salir=True
 
     if eleccionActividad==(1):
+
         clear()
         matematicas()
-        regresar= int(input("Para regresar oprima 1 para salir 2"))
-        if regresar==1:
-            return True
-        elif  regresar==2:
-            return False
-        clear()
+        Matematicas()
         
+        while salir==True:
+            regresar= int(input("Para regresar oprima 1 para salir 2"))
+            clear()
+            if regresar==1:
+                return True
+                break
+            elif  regresar==2:
+                return False
+                break
+            else: 
+                print("valor invalido")
+
+        clear()
+
+    
     elif eleccionActividad==(2):
+
         clear()
         ciencias()
-        regresar= int(input("Para regresar oprima 1 para salir 2"))
-        if regresar==1:
-            return True
-        elif  regresar==2:
-            return False
-        clear()
+        Ciencias()
+
+        while salir==True:
+            regresar= int(input("Para regresar oprima 1 para salir 2"))
+            clear()
+            if regresar==1:
+                return True
+                break
+            elif  regresar==2:
+                return False
+                break
+            else: 
+                print("valor invalido")
+
+        
 
     elif eleccionActividad==(3):
+
         clear()
         lectura()
-        regresar= int(input("Para regresar oprima 1 para salir 2"))
-        if regresar==1:
-            return True
-        elif  regresar==2:
-            return False
-        clear()
+        Lecturas()
 
-    else:
-        print("Valor invalido")
+        while salir==True:
+            regresar= int(input("Para regresar oprima 1 para salir 2"))
+            clear()
+            if regresar==1:
+                return True
+                break
+            elif  regresar==2:
+                return False
+                break
+            else: 
+                print("valor invalido")
 
-a=1
-while a==1:
-    main()
+        
+
+#Main loop 
+IniciarPrograma=True
+
+while IniciarPrograma==True: #Va a repetir la funcion main hasta q el usuario quiera salir de este 
+    IniciarPrograma=(main()) #reasignacion de variable dependedno lo que devuelva la funcion main
+
+#Salida del programa 
+print("Gracias por utilizar Sharp Learning")
+time.sleep(1)
+clear()
