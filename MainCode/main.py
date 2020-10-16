@@ -144,6 +144,11 @@ def main():
             else: 
                 print("valor invalido")
 
+    else:
+        print("\nValor no valido")
+        time.sleep(0.5)
+        clear()
+        return True
 
 #Main loop 
 IniciarPrograma=True
