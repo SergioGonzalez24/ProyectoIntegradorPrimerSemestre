@@ -12,7 +12,7 @@ import time
 #Funcion Principal, posteriormente importada en main 
 def Lecturas ():
 
-#Funcion para borrar contenido de terminal
+    #Funcion para borrar contenido de terminal
     def clear(): 
         # para windows 
         if name == 'nt': 
@@ -21,7 +21,7 @@ def Lecturas ():
         else: 
             _ = system('clear') 
 
-#Lectura y ejercicos 1
+    #Lectura y ejercicos 1
     def lectura1 ():  
         '''Esta funcion llama la primer lectura y sus preguntas'''
         #Rutas; colocar ruta nueva en caso de ser necesario y maracar como comentario las que no estan en uso
@@ -91,7 +91,7 @@ def Lecturas ():
                 print ('Entrada no valida')
         
 
-#Lectura y ejercicos 2 
+    #Lectura y ejercicos 2 
     def lectura2 (): 
         '''Esta funcion llama la segunda lectura y sus preguntas correspondientes'''
 
