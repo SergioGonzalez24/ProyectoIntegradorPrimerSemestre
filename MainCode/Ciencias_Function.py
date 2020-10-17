@@ -51,7 +51,7 @@ def Ciencias():
 
 
     cont=0
-    while cont<=5: #Si se desean agregar mas preguntas cambie el valor de comparacion
+    while cont<=9: #Si se desean agregar mas preguntas cambie el valor de comparacion 
 
         #Asignacion de variable de celda donde estan las preguntas
         preguntacell=readFile["Preguntas"][cont] 
@@ -133,5 +133,4 @@ try:
 except FileNotFoundError:
     print("Cambiar de path")
     print("No se encontro el archivo")
-
 '''

@@ -18,6 +18,7 @@ def clear(): #Funcion para borrar contenido de terminal
     else: 
         _ = system('clear') 
 
+
 def matematicas():
     pass
 
@@ -78,7 +79,7 @@ def main():
         clear()
         #Introduccion
         print("\nCiencias: \nA continuacion se te van a presentar un cuestionario con preguntas relacionadas con el la materia de ciencias\n Lee aentamente y responde las preguntas correctamente")
-        time.sleep(2)
+        time.sleep(1)
         try:
             Ciencias() #Modulo de App lecturas
 
@@ -108,7 +109,7 @@ def main():
         clear()
         #Introduccion
         print("\nLECTURA: \nA continuacion se te van a presentar diferentes lecturas.\n Lee aentamente y responde las preguntas correctamente")
-        time.sleep(2)
+        time.sleep(1)
         try:
             Lecturas() #Modulo de App lecturas
 

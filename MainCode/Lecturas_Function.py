@@ -30,11 +30,11 @@ def Lecturas ():
         '''Esta funcion llama la primer lectura y sus preguntas'''
         #Rutas; colocar ruta nueva en caso de ser necesario y maracar como comentario las que no estan en uso
 
-        german=("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/Lecturas/El_Congreso_de_los_ratones.txt")
-        #sergio=("/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/Lecturas/El_Congreso_de_los_ratones.txt")
+        #german=("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/Lecturas/El_Congreso_de_los_ratones.txt")
+        sergio=("/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/Lecturas/El_Congreso_de_los_ratones.txt")
 
         print("")
-        lectura=open(german,"r") #Cambiar ruta dependiendo el usuario
+        lectura=open(sergio,"r") #Cambiar ruta dependiendo el usuario
 
         print("LECTURA 1:\n")
         time.sleep(1)
@@ -54,11 +54,11 @@ def Lecturas ():
 
         #Rutas; colocar ruta nueva en caso de ser necesario y maracar como comentario las que no estan en uso
 
-        german=("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/PreguntasLecturas/Preguntas1.txt")
-        #sergio=("/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/PreguntasLecturas/Preguntas1.txt")
+        #german=("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/PreguntasLecturas/Preguntas1.txt")
+        sergio=("/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/PreguntasLecturas/Preguntas1.txt")
 
         print("")
-        preguntas=open(german,"r") #Cambiar ruta dependiendo el usuario
+        preguntas=open(sergio,"r") #Cambiar ruta dependiendo el usuario
 
         print("PREGUNTAS 1\n")
         time.sleep(1)
@@ -130,10 +130,10 @@ def Lecturas ():
 
         #Rutas; colocar ruta nueva en caso de ser necesario y maracar como comentario las que no estan en uso
 
-        german=("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/Lecturas/El_raton_campesino_y_el_rico_cortesano.txt")
-        #sergio=("/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/Lecturas/El_raton_campesino_y_el_rico_cortesano.txt")
+        #german=("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/Lecturas/El_raton_campesino_y_el_rico_cortesano.txt")
+        sergio=("/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/Lecturas/El_raton_campesino_y_el_rico_cortesano.txt")
 
-        lectura=open(german,"r") #Cambiar ruta dependiendo el usuario
+        lectura=open(sergio,"r") #Cambiar ruta dependiendo el usuario
 
         print("LECTURA 2:\n")
         time.sleep(1)        
@@ -153,11 +153,11 @@ def Lecturas ():
 
         #Rutas; colocar ruta nueva en caso de ser necesario y maracar como comentario las que no estan en uso
 
-        german=("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/PreguntasLecturas/Preguntas2.txt")
-        #sergio=("/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/PreguntasLecturas/Preguntas2.txt")
+        #german=("/Users/germanguzman/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/PreguntasLecturas/Preguntas2.txt")
+        sergio=("/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/PreguntasLecturas/Preguntas2.txt")
 
 
-        preguntas=open(german,"r") #Cambiar ruta dependiendo el usuario
+        preguntas=open(sergio,"r") #Cambiar ruta dependiendo el usuario
 
         print("PREGUNTAS 2\n")
         time.sleep(1)
@@ -227,9 +227,10 @@ def Lecturas ():
 
 
 #Test independiente de Lecturas
-
+'''
 try:
     Lecturas()
 except FileNotFoundError:
     print("Cambiar de path")
     print("No se encontro el archivo")
+'''
