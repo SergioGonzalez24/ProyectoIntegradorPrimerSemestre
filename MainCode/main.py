@@ -21,8 +21,6 @@ def clear(): #Funcion para borrar contenido de terminal
 def matematicas():
     pass
 
-def ciencias():
-    pass
 
 
 '''
@@ -78,8 +76,15 @@ def main():
     elif eleccionActividad==(2):
 
         clear()
-        ciencias()
-        Ciencias()
+        #Introduccion
+        print("\nCiencias: \nA continuacion se te van a presentar un cuestionario con preguntas relacionadas con el la materia de ciencias\n Lee aentamente y responde las preguntas correctamente")
+        time.sleep(2)
+        try:
+            Ciencias() #Modulo de App lecturas
+
+        except FileNotFoundError:
+            print("No se encontro el archivo, revisar path")
+            print("Para el correcto funcionamiento cambiar path dentro de Lecturas_Function.py \n")
         #salir()
 
         #Salir de SharpLearning o Continuar para otra actividad
