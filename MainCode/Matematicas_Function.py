@@ -1,3 +1,6 @@
+#Descripcion de Programa:
+#Desarrollado por:
+#@Isabel Vieyra Enríquez - A01745860
 def Matematicas ():
    
    import time
