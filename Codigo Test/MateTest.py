@@ -52,12 +52,12 @@ def quiz_mate():
                                "1) 13   2) 27   3) 23", 3)
     tlim = tlim + tinc
 
-    
+    elapsed=-time.perf_counter()+tlim
     
     if (tiempot(tlim, time_0)):
         print('Se acabó el tiempo!')
         return
     
     print('¡Bien hecho!')
-    print("Te sobraron:",tlim, "segundos")
+    print("Te sobraron:",round(elapsed,2), "segundos")
 quiz_mate()
