@@ -1,6 +1,15 @@
-#Descripcion de Programa:
+'''
+Descripcion de Programa:
+Este programa es de la sección de Matemáticas.
+El objetivo es ayudar a que los alumnos aprendan matemáticas de una forma más entretenida,
+el tiempo también les ayudará a ver cuanto tardan en cada ejercicio para así,
+poder tener un registro de su progreso con la materia.
+Tiene 5 problemas de matemáticas, los cuales, al responder correctamente,
+suman tiempo al tiempo total, si se responden erroneamente, el tiempo diminuye.
+Deberán intentar terminar el test antes de que se les acabe el tiempo.
 #Desarrollado por:
 #@Isabel Vieyra Enríquez - A01745860
+'''
 def Matematicas ():
    
    import time
