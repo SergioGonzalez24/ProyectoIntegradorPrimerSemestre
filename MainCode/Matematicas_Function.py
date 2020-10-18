@@ -48,7 +48,6 @@ def Matematicas ():
                                                "1) 4   2) 2   3) 4", 2)
         tlim = tlim + tinc
 
-        # manera pro
         tinc = pregunta(4, "A cuánto equivale pi?",
                                    "1) 3.14159   2) 3.14921   3) 3.14412", 1)
         tlim = tlim + tinc
