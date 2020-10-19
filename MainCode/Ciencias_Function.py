@@ -1,5 +1,6 @@
 '''
 Descripcion de Programa:
+El objetivo de este programa es evaluar al usuario sus conocimientos de ciencias basicas.
 
 Desarrollado por:
 @Sergio Gonzalez - A01745446
@@ -34,7 +35,8 @@ def Ciencias():
         nombresjug.clear()
         puntajes.clear()
     
-    
+     
+
     #cambien la ruta dependiendo de donde guarden el excel
 
     sergio=("/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/PreguntasCiencias/PreguntasCiencias.xlsx")
@@ -101,7 +103,7 @@ def Ciencias():
         while respuestas==True:
 
             #responder preguntas y transformarlas a minusculas el input
-            resUrs=input("Ingrese el inciso conrrecto: ")
+            resUrs=input("Ingrese el inciso correcto: ")
             resUrs= resUrs.lower()
 
             if resUrs==resCorrectacell:
@@ -127,10 +129,12 @@ def Ciencias():
     print(f"{nombre} usted tuvo {sum(puntosT)} de {len(puntosT)}\n por lo tanto su calif final es de {promF}")
 
 #Test independiente de Ciencias
+
 '''
 try:
     Ciencias()
 except FileNotFoundError:
     print("Cambiar de path")
     print("No se encontro el archivo")
+
 '''

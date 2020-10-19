@@ -36,11 +36,11 @@ def salir():
             print("valor invalido")
 '''
 
-#Funcion Principal
+#Funcion Principals
 def main():
 
-    print("\n Bienvenido a la apliccación Sharp Learning")
-    print("\nAqui podras practicar tus habilidades de: \n\nMatematicas, Ciencias y Lectura\n")
+    print("\n Bienvenido a la aplicación Sharp Learning")
+    print("\nAquí podras practicar tus habilidades de: \n\nMatematicas, Ciencias y Lectura\n")
 
     eleccionActividad=int(input("Seleccione el numero de las actividades a realizar: \n\n1-.Matematicas \n\n2-.Ciencias \n\n3-.Lectura \n\n4-.Salir de SharLearning "))
     salir=True
@@ -50,7 +50,7 @@ def main():
 
         clear()
         #Introduccion
-        print("\nCiencias: \nA continuacion se te van a presentar un cuestionario con preguntas relacionadas con el la materia de ciencias\n Lee aentamente y responde las preguntas correctamente")
+        print("\nMatemáticas: \nA continuacion se te van a presentar un cuestionario con preguntas relacionadas con el la materia de ciencias\n Lee aentamente y responde las preguntas correctamente")
         time.sleep(1)
         Matematicas()
         #salir()
