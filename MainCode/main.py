@@ -19,11 +19,6 @@ def clear(): #Funcion para borrar contenido de terminal
         _ = system('clear') 
 
 
-def matematicas():
-    pass
-
-
-
 '''
 def salir():
     while salir==True:
@@ -54,7 +49,9 @@ def main():
     if eleccionActividad==(1):
 
         clear()
-        matematicas()
+        #Introduccion
+        print("\nCiencias: \nA continuacion se te van a presentar un cuestionario con preguntas relacionadas con el la materia de ciencias\n Lee aentamente y responde las preguntas correctamente")
+        time.sleep(1)
         Matematicas()
         #salir()
 

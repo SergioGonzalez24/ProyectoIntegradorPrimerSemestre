@@ -60,4 +60,5 @@ def quiz_mate():
     
     print('¡Bien hecho!')
     print("Te sobraron:",round(elapsed,2), "segundos")
-quiz_mate()
+
+
