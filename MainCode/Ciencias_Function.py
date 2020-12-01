@@ -39,7 +39,7 @@ def Ciencias():
 
     #cambien la ruta dependiendo de donde guarden el excel
 
-    sergio=("/Users/sergiogonzalez/Documents/GitHub/ProyectoIntegradorPrimerSemestre/MainCode/PreguntasCiencias/PreguntasCiencias.xlsx")
+    sergio=("/Users/sergiogonzalez/OneDrive/TEC/Primer Semestre/Pensamiento Computacional Orientado a Objetos/ProyectoIntegradorPrimerSemestre/MainCode/PreguntasCiencias/PreguntasCiencias.xlsx")
 
     readFile=pd.read_excel(sergio)
 
@@ -136,5 +136,4 @@ try:
 except FileNotFoundError:
     print("Cambiar de path")
     print("No se encontro el archivo")
-
 '''
